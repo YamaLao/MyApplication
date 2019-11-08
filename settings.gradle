@@ -1,2 +1,4 @@
-include ':app'
+include ':app', ':app-test', ':apng_library'
 rootProject.name='My Application'
+project(':app-test').projectDir = new File('app/libs/Kapng-Android-master/app-test')
+project(':apng_library').projectDir = new File('app/libs/Kapng-Android-master/apng_library')
